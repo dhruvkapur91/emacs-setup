@@ -1,3 +1,6 @@
+;; Make the current line more visible...
+(global-hl-line-mode 1)
+
 ;; Hoping to see a visible bell instead of sound one
 (setq visible-bell nil)
 (setq ring-bell-function (lambda ()
