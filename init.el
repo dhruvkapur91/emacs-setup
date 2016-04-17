@@ -26,7 +26,7 @@
 ;; Navigate between windows using alt-1 alt-2 shift-left shift-right shift-up
 (windmove-default-keybindings)
 
-;; Goto emacs file directly
+;; Goto emacs init file directly
 (defun goto-emacs-file ()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
