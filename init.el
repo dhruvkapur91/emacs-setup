@@ -169,5 +169,13 @@ directory to make multiple eshell windows easier."
 
 ;;;;;;;;
 ;; What is the better place for me to write shortcuts than the first file itself
+
+;; The C keys
 ;; Ch m : To display all the minor modes
+
+;; The M keys
+;; Mx eval-region
+;; Mx eval-buffer
+
+
 ;;;;;;;;
