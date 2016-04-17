@@ -167,3 +167,7 @@ directory to make multiple eshell windows easier."
 (add-to-list 'load-path "/usr/local/self/ESS-15.09/lisp/")
 (load "ess-site")
 
+;;;;;;;;
+;; What is the better place for me to write shortcuts than the first file itself
+;; Ch m : To display all the minor modes
+;;;;;;;;
