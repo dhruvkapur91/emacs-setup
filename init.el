@@ -182,3 +182,15 @@ directory to make multiple eshell windows easier."
 
 ;;;;;;;;
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Trying to have a function that can be called to commit changes in this file
+
+(defun commit-init-el(commit-message)
+  (interactive)
+  (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
+  )
+
+(commit-init-el "Add a function that can be called on commit")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
