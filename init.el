@@ -1,3 +1,6 @@
+;; Global line numbers in all modes
+(global-linum-mode 1)
+
 ;; Make the current line more visible...
 (global-hl-line-mode 1)
 
@@ -191,6 +194,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-(commit-init-el "Add a function that can be called on commit")
+(commit-init-el "Add global line number modes")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
