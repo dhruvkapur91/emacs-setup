@@ -177,5 +177,8 @@ directory to make multiple eshell windows easier."
 ;; Mx eval-region
 ;; Mx eval-buffer
 
+;; The C M keys
+;; CMx : evaluate a single expression
 
 ;;;;;;;;
+
