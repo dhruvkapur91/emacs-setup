@@ -66,4 +66,9 @@
       delete-old-versions t ;; Don't ask to delete excess backup versions.
       backup-by-copying t)  ;; Copy all files, don't rename them.
 
+
+;; now also backup versioned files, we don't check in on every commit right? (Not sure if I understand what this shit means)
+
+(setq vc-make-backup-files t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
