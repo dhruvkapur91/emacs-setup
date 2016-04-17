@@ -1,3 +1,8 @@
+;; Enable global auto indentation
+(define-key global-map (kbd "RET") 'newline-and-indent)
+;; Mode notes
+;; Should be turned off in a local mode when not required
+
 ;; Lets require Ido
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
@@ -201,6 +206,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-(commit-init-el "Add ido with a concept of mode notes")
+(commit-init-el "Add global indentation stuff")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
