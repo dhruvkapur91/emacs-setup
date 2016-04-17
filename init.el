@@ -1,3 +1,10 @@
+;; Lets require Ido
+(ido-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+;; Mode notes
+;; Some people find Ido’s find-files support a bit intrusive. Just remember that if you type C-f Ido will revert to the old-style completion engine!
+
 ;; Global line numbers in all modes
 (global-linum-mode 1)
 
@@ -194,6 +201,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-(commit-init-el "Add global line number modes")
+(commit-init-el "Add ido with a concept of mode notes")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
