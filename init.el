@@ -255,6 +255,9 @@ directory to make multiple eshell windows easier."
 
 ;; The C keys
 ;; Ch m : To display all the minor modes
+;; Ch v : describe variable
+;; Ch f : describe function
+;; Ch k : describe function invoked by the keystrokes
 
 ;; The M keys
 ;; Mx eval-region
@@ -274,6 +277,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Add smex major mode commands comments and more todos and links...")
+;;(commit-init-el "Add some more key binding comments")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
