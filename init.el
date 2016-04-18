@@ -254,6 +254,7 @@ directory to make multiple eshell windows easier."
 ;; Mx eval-region
 ;; Mx eval-buffer
 ;; My : Paste older things... TODO. I don't understand it yet
+;; MgMg : Goto a line
 
 ;; The C M keys
 ;; CMx : evaluate a single expression
@@ -270,7 +271,7 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Add todo for removing the custom set thingy")
+;;(commit-init-el "Add comment for going to a line")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
