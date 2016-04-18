@@ -249,6 +249,7 @@ directory to make multiple eshell windows easier."
 ;; Ch i : Emacs manual
 ;; Ch a : Search for a command
 ;; Ch Ch a : Shows help
+;; C-8 Cn : Go 8 lines forward
 
 ;; The M keys
 ;; Mx eval-region
@@ -256,6 +257,8 @@ directory to make multiple eshell windows easier."
 ;; My : Paste older things... TODO. I don't understand it yet
 ;; MgMg : Goto a line
 ;; Mx occur
+;; Mc capitalize Word
+;; M- Mc : Will capitalize the word just typed
 
 ;; The C M keys
 ;; CMx : evaluate a single expression
