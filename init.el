@@ -113,6 +113,7 @@
 
 ;; Mode notes
 ;; Some people find Ido’s find-files support a bit intrusive. Just remember that if you type C-f Ido will revert to the old-style completion engine!
+;; Can enter Cj instead of enter if we don't want to press enter twice when creating new buffer
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Global line numbers in all modes
@@ -321,7 +322,7 @@ directory to make multiple eshell windows easier."
   )
 
 ;;commit-function
-;;(commit-init-el "And the create new buffer for ido is not working. added a todo") 
+;;(commit-init-el "Add a mode tip for ido") 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
