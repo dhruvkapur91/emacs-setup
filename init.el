@@ -258,6 +258,7 @@ directory to make multiple eshell windows easier."
 ;; Ch v : describe variable
 ;; Ch f : describe function
 ;; Ch k : describe function invoked by the keystrokes
+;; Ch i : Emacs manual
 
 ;; The M keys
 ;; Mx eval-region
@@ -277,6 +278,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "format some comments")
+;;(commit-init-el "Add comment for emacs manual")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
