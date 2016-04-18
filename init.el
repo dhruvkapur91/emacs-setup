@@ -4,6 +4,12 @@
                          ("melpa" . "https://melpa.org/packages/")))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
 
+;; For loading packages from the Emacs Lisp Package Archive (ELPA)
+(defun package (package)
+    (when (not (package-installed-p package))
+      (package-install package))
+    (personal package))
+
 ;; Enable global auto indentation
 (define-key global-map (kbd "RET") 'newline-and-indent)
 ;; Mode notes
