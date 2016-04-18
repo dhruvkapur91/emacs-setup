@@ -99,12 +99,21 @@
 ;; Mode notes
 ;; Should be turned off in a local mode when not required
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Lets require Ido
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
+
+;; I am unsure what this does as it worked before it as well
+(setq ido-use-filename-at-point 'guess)
+
+;; Always create new buffer without any confirmation
+(setq ido-create-new-buffer 'always)
+
 ;; Mode notes
 ;; Some people find Ido’s find-files support a bit intrusive. Just remember that if you type C-f Ido will revert to the old-style completion engine!
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Global line numbers in all modes
 (global-linum-mode 1)
@@ -288,6 +297,7 @@ directory to make multiple eshell windows easier."
 ;; M< : Move to the beginning of the buffer
 ;; M> : Move to the end of the buffer
 ;; Mm : move back to indentation.
+;; Mx ffap : Find fine at point
 
 ;; The C M keys
 ;; CMx : evaluate a single expression
@@ -311,7 +321,7 @@ directory to make multiple eshell windows easier."
   )
 
 ;;commit-function
-;;(commit-init-el "Add global sub word which lets one go through the camel case") 
+;;(commit-init-el "Add some ido specific configuration like creating new bufferes and file at a point") 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
