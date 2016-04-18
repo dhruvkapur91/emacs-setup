@@ -4,6 +4,16 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
 
+;; For loading packages from the Emacs Lisp Package Archive (ELPA)
+(defun package (package)
+    (when (not (package-installed-p package))
+      (package-install package))
+    (personal package))
+
+;; For loading personal configurations
+(defun personal (library)
+  (load (concat "~/.emacs.d/personal/" (symbol-name library)) 'noerror))
+
 
 (package-initialize)
 
@@ -29,16 +39,6 @@
 
 (global-set-key [(control d)] 'duplicate-line)
 
-
-;; For loading packages from the Emacs Lisp Package Archive (ELPA)
-(defun package (package)
-    (when (not (package-installed-p package))
-      (package-install package))
-    (personal package))
-
-;; For loading personal configurations
-(defun personal (library)
-  (load (concat "~/.emacs.d/personal/" (symbol-name library)) 'noerror))
 
 ;; Enable global auto indentation
 (define-key global-map (kbd "RET") 'newline-and-indent)
@@ -248,6 +248,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Change https to http for packag installation and add ag and smex")
+;;(commit-init-el "Move package and personal function defination up, before where it is required")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
