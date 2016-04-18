@@ -1,3 +1,9 @@
+;; Setting up package manager for Emacs
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
+
+
 ;; Enable global auto indentation
 (define-key global-map (kbd "RET") 'newline-and-indent)
 ;; Mode notes
@@ -206,6 +212,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Commrent out the function call else it wont let me load emacs properly")
+;;(commit-init-el "Setting up package manager for Emacs")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
