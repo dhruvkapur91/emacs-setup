@@ -270,9 +270,12 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Change theme from tsh(something)-dark to solarized-dark which matches my iterm... also have full screen thingy set differently")
+;;(commit-init-el "Add todo for removing the custom set thingy")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; TODO : Its hard to read what custom set things have done and it becomes a global mess very soon - I think I'll change it to move it into separate sectiona nd configure it myself.
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
