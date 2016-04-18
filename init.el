@@ -3,6 +3,9 @@
 ;; Gotta see matching parens
 (show-paren-mode t)
 
+;; For emacsclient
+(server-start)
+
 ;; For duplicating a line
 (defun duplicate-line()
   (interactive)
@@ -240,6 +243,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "See matching parens")
+;;(commit-init-el "Start emacs in server mode")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
