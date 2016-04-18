@@ -22,6 +22,11 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Enable subword mode
+(global-subword-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; smartscan
 (package-install 'smartscan)
 (smartscan-mode 1) ;; enabling smartscan
@@ -267,6 +272,7 @@ directory to make multiple eshell windows easier."
 ;; Cv : scroll down
 ;; Cu CSpace : Return back to the pointer or mark
 ;; Cs,Cr : Search
+;; CxCx : Toggle between mark and point
 
 ;; The M keys
 ;; Mx eval-region
@@ -305,7 +311,7 @@ directory to make multiple eshell windows easier."
   )
 
 ;;commit-function
-;;(commit-init-el "Add smartscan, press Mn Mp on words to follow") 
+;;(commit-init-el "Add global sub word which lets one go through the camel case") 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
