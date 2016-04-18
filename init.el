@@ -109,7 +109,7 @@
 (setq ido-use-filename-at-point 'guess)
 
 ;; Always create new buffer without any confirmation
-(setq ido-create-new-buffer 'always)
+(setq ido-create-new-buffer 'always) ;; and this is not helping TODO.
 
 ;; Mode notes
 ;; Some people find Ido’s find-files support a bit intrusive. Just remember that if you type C-f Ido will revert to the old-style completion engine!
@@ -321,7 +321,7 @@ directory to make multiple eshell windows easier."
   )
 
 ;;commit-function
-;;(commit-init-el "Add some ido specific configuration like creating new bufferes and file at a point") 
+;;(commit-init-el "And the create new buffer for ido is not working. added a todo") 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
