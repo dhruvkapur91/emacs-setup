@@ -34,6 +34,7 @@
 ;; mode notes: Smex is a M-x enhancement for Emacs. Built on top of Ido, it provides a convenient interface to your recently and most frequently used commands. And to all the other commands, too.
 ;; The commands are displayed in an Ido completion buffer, ordered by relevance. The 7 most recently executed commands come first, the rest are sorted by frequency of use, command length and in alphabetical order.
 ;;Ido completion in 10 seconds: Typing selects matching commands: e.g. 'lnmd' matches 'line-number-mode'. C-s/C-r switches to the next/previous match. Enter executes the selected command.
+;; smex-major-mode-commands runs Smex, limited to commands that are relevant to the active major mode. Try it with Dired or Magit. TODO. I should try to do it when I am dealing with these major modes.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -265,6 +266,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Add some more smex major mode notes")
+;;(commit-init-el "Add smex major mode commands comments and a todo")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
