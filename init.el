@@ -1,5 +1,7 @@
 (package-initialize)
 
+;; Gotta see matching parens
+(show-paren-mode t)
 
 ;; For duplicating a line
 (defun duplicate-line()
@@ -238,6 +240,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Add duplicate line function and key binding")
+;;(commit-init-el "See matching parens")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
