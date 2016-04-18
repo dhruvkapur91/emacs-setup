@@ -1,4 +1,14 @@
+;; Setting up package manager for Emacs
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.org/packages/")))
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
+
+
 (package-initialize)
+
+(package 'ag)
+(package 'smex)
 
 ;; Gotta see matching parens
 (show-paren-mode t)
@@ -19,11 +29,6 @@
 
 (global-set-key [(control d)] 'duplicate-line)
 
-;; Setting up package manager for Emacs
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
 
 ;; For loading packages from the Emacs Lisp Package Archive (ELPA)
 (defun package (package)
@@ -243,6 +248,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Start emacs in server mode")
+;;(commit-init-el "Change https to http for packag installation and add ag and smex")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
