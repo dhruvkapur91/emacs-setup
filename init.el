@@ -10,6 +10,10 @@
       (package-install package))
     (personal package))
 
+;; For loading personal configurations
+(defun personal (library)
+  (load (concat "~/.emacs.d/personal/" (symbol-name library)) 'noerror))
+
 ;; Enable global auto indentation
 (define-key global-map (kbd "RET") 'newline-and-indent)
 ;; Mode notes
@@ -218,6 +222,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Add the package function")
+;;(commit-init-el "Adding the personal pattern stuff as well")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
