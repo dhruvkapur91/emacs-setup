@@ -260,6 +260,10 @@ directory to make multiple eshell windows easier."
 ;; The C M keys
 ;; CMx : evaluate a single expression
 
+;; There is Mx shell and Mx term and Mx ansi-term...
+;; The Mx ansi-term has two modes activated by CcCj which is line mode and CcCk which is char mode.
+;; In line mode the terminal behaves much like emacs buffer and can be controlled via normal ways while in char mode it behaves like a terminal emulator and can almost run things like top.
+
 
 ;;;;;;;;
 
@@ -273,7 +277,7 @@ directory to make multiple eshell windows easier."
   )
 
 ;;commit-function
-;;(commit-init-el "Add comment for Mx occur") 
+;;(commit-init-el "Add comment for emacs terminal and their shortcuts") 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
