@@ -250,6 +250,10 @@ directory to make multiple eshell windows easier."
 ;; Ch a : Search for a command
 ;; Ch Ch a : Shows help
 ;; C-8 Cn : Go 8 lines forward
+;; Cb,Cf : Move by characters
+;; Cv : scroll down
+;; Cu CSpace : Return back to the pointer or mark
+;; Cs,Cr : Search
 
 ;; The M keys
 ;; Mx eval-region
@@ -259,9 +263,17 @@ directory to make multiple eshell windows easier."
 ;; Mx occur
 ;; Mc capitalize Word
 ;; M- Mc : Will capitalize the word just typed
+;; Mb, Mf : Move by words
+;; Me, Ma : Move by paragraphs
+;; Mv : Scroll up
+;; M< : Move to the beginning of the buffer
+;; M> : Move to the end of the buffer
+;; Mm : move back to indentation.
 
 ;; The C M keys
 ;; CMx : evaluate a single expression
+;; CMf , CMb : move by s expression forward or before (like quotes or balanced parenthesis)
+;; CMs : regex search
 
 ;; There is Mx shell and Mx term and Mx ansi-term...
 ;; The Mx ansi-term has two modes activated by CcCj which is line mode and CcCk which is char mode.
@@ -280,7 +292,7 @@ directory to make multiple eshell windows easier."
   )
 
 ;;commit-function
-;;(commit-init-el "Add comment for emacs terminal and their shortcuts") 
+;;(commit-init-el "Add comments for more navigation...") 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
