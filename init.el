@@ -35,6 +35,14 @@
 ;; The commands are displayed in an Ido completion buffer, ordered by relevance. The 7 most recently executed commands come first, the rest are sorted by frequency of use, command length and in alphabetical order.
 ;;Ido completion in 10 seconds: Typing selects matching commands: e.g. 'lnmd' matches 'line-number-mode'. C-s/C-r switches to the next/previous match. Enter executes the selected command.
 ;; smex-major-mode-commands runs Smex, limited to commands that are relevant to the active major mode. Try it with Dired or Magit. TODO. I should try to do it when I am dealing with these major modes.
+;; Ch-f in smex defaults to the function on the current line
+;; Ch-w shows keybinding for selected command via where-is
+;; I think Smex with M-. can go to definition of a function, yet to see how it works. TODO.
+;; smex-show-unbound-commands shows commands that are frequently used but have no key binding for them.
+;; file ~/.emacs.d/smex-items is supposed to have its state saved between different emacs session.
+;; this is available in variable smex-save-file
+;; smex link: https://www.emacswiki.org/emacs/Smex
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -266,6 +274,6 @@ directory to make multiple eshell windows easier."
   (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
   )
 
-;;(commit-init-el "Add smex major mode commands comments and a todo")
+;;(commit-init-el "Add smex major mode commands comments and more todos and links...")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
