@@ -340,20 +340,6 @@ directory to make multiple eshell windows easier."
 
 ;;;;;;;;
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; Trying to have a function that can be called to commit changes in this file
-
-(defun commit-init-el(commit-message)
-  (interactive)
-  (shell-command (format "cd %s; git add init.el; git commit -m '%s'" (message (file-name-directory (buffer-file-name))) commit-message))
-  )
-
-;;commit-function
-;;(commit-init-el "Add gradle support") 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 ;; TODO : Its hard to read what custom set things have done and it becomes a global mess very soon - I think I'll change it to move it into separate sectiona nd configure it myself.
 
 (custom-set-variables
