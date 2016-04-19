@@ -261,6 +261,11 @@
 
 ;; TODO : make eshell export things I am exporting in env.sh.
 
+;; Try to make sure that emacs do not auto scroll to the botoom of the eshell whenever I type a new command, I personally like it to be at the top or middle...
+;; TODO : This doesn't work :( 
+(remove-hook 'comint-output-filter-functions
+             'comint-postoutput-scroll-to-bottom)
+
 (defun eshell-here ()
   "Opens up a new shell in the directory associated with the
 current buffer's file. The eshell is renamed to match that
