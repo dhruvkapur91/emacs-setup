@@ -46,6 +46,10 @@
 ;; Add magit
 ;; (package 'magit) ;; currently doesn't work. don't know why. TODO
 ;; So currently its installed with package-install magit
+;; magit-status can be called through Mx.
+;; s to stage a file
+;; k to checkout a file
+;; I think c and CcCc to commit stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
