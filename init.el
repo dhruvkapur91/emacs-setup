@@ -259,6 +259,8 @@
 
 ;; Configuring eshell to open from a buffer
 
+;; TODO : make eshell export things I am exporting in env.sh.
+
 (defun eshell-here ()
   "Opens up a new shell in the directory associated with the
 current buffer's file. The eshell is renamed to match that
