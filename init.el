@@ -350,6 +350,7 @@ directory to make multiple eshell windows easier."
 ;; The Mx ansi-term has two modes activated by CcCj which is line mode and CcCk which is char mode.
 ;; In line mode the terminal behaves much like emacs buffer and can be controlled via normal ways while in char mode it behaves like a terminal emulator and can almost run things like top.
 
+;; Maybe a good file to review: http://whattheemacsd.com/
 
 ;;;;;;;;
 
